@@ -1,9 +1,11 @@
 import About from './components/About/About'
 import Projects from './components/Projects/Projects'
 
+import PocketBase from 'pocketbase'
+
 async function getProjects() {
 	const res = await fetch(
-		'http://127.0.0.1:8090/api/collections/projects/records',
+		'https://fleffy-portfolio-db.pockethost.io/api/collections/projects/records/',
 		{ cache: 'no-store' }
 	)
 	const data = await res.json()

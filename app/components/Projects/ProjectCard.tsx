@@ -9,7 +9,7 @@ export default function ProjectCard({ project }: any) {
 		<div className='w-full border border-slate-200/20 p-4 rounded-xl bg-white/5 hover:bg-white/20 transition-colors duration-500'>
 			<div className='border border-slate-200/20 flex justify-center items-center rounded-lg overflow-hidden mb-4'>
 				<Image
-					src={`http://127.0.0.1:8090/api/files/m5wsps1y77yn5ix/${id}/${img}`}
+					src={`https://fleffy-portfolio-db.pockethost.io/api/files/_pb_users_auth_/${id}/${img}`}
 					width={1280}
 					height={720}
 					className='max-w-[720px] max-h-[250px] object-cover object-top'

@@ -1,8 +1,6 @@
-import Image from 'next/image'
-
 async function getProject(id: string) {
 	const res = await fetch(
-		`http://127.0.0.1:8090/api/collections/projects/records/${id}`,
+		`http://fleffy-portfolio-db.pockethost.io/api/collections/projects/records/${id}`,
 		{ next: { revalidate: 10 } }
 	)
 	const data = await res.json()
@@ -84,7 +82,7 @@ export default async function ProjectPage({ params }: any) {
 					className='w-full relative lineBg rounded-lg border shadow-lg border-slate-200/20'
 					width={1920}
 					height={1080}
-					src={`http://127.0.0.1:8090/api/files/m5wsps1y77yn5ix/${id}/${gif}`}
+					src={`https://fleffy-portfolio-db.pockethost.io/api/files/_pb_users_auth_/${id}/${gif}`}
 				/>
 			</div>
 		</section>
