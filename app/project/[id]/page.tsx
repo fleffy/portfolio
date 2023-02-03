@@ -26,15 +26,15 @@ export default async function ProjectPage({ params }: any) {
 				</div>
 				<div className='md:flex-col lg:block pt-5'>
 					<span>Used technologies:</span>
-					<ol className='flex flex-wrap relative lg:w-[90%] pt-3'>
-						{/* {tags.split(' ')?.map((tag: any) => {
+					<ul className='flex flex-wrap relative lg:w-[90%] pt-3'>
+						{tags.split(' ')?.map((tag: any) => {
 							return (
 								<li className='py-1 px-3 border rounded-full mr-1 mb-2 text-sm'>
 									{tag}
 								</li>
 							)
-						})} */}
-					</ol>
+						})}
+					</ul>
 				</div>
 				<div className='flex gap-3'>
 					<a href={githubLink} target='_blank'>
