@@ -80,6 +80,7 @@ export default async function ProjectPage({ params }: any) {
 				<video
 					autoPlay
 					loop
+					muted
 					playsInline
 					className='w-full relative lineBg rounded-lg border shadow-lg border-slate-200/20'
 					width={1920}
