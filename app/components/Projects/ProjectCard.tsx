@@ -18,13 +18,13 @@ export default function ProjectCard({ project }: any) {
 			</div>
 			<h2 className='text-2xl font-bold'>{title}</h2>
 			<ul className='flex flex-wrap relative my-5'>
-				{/* {tags.split(' ')?.map((tag: any) => {
+				{tags.split(' ')?.map((tag: any) => {
 					return (
 						<li className='py-1 px-3 border rounded-full mr-1 mb-2 text-sm'>
 							{tag}
 						</li>
 					)
-				})} */}
+				})}
 			</ul>
 			<div className='flex gap-3'>
 				<Link
