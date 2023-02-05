@@ -82,7 +82,7 @@ export default async function ProjectPage({ params }: any) {
 					loop
 					muted
 					playsInline
-					className='w-full relative lineBg rounded-lg border shadow-lg border-slate-200/20'
+					className='w-full relative rounded-lg border shadow-lg border-slate-200/20'
 					width={1920}
 					height={1080}
 					src={`https://fleffy-portfolio-db.pockethost.io/api/files/_pb_users_auth_/${id}/${gif}`}
