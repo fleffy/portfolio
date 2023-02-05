@@ -8,6 +8,8 @@ const nextConfig = {
 			{
 				protocol: 'https',
 				hostname: 'fleffy-portfolio-db.pockethost.io',
+				port: '',
+				pathname: '/api/files/**/**/**',
 			},
 		],
 	},

@@ -6,7 +6,7 @@ export default function Header() {
 		<nav className='fixed w-full backdrop-blur-lg flex flex-col justify-between items-center py-4 z-40 text-slate-50'>
 			<div className='flex w-full max-w-7xl items-center justify-between px-4'>
 				<Link href='/'>
-					<Image src='/logo.svg' width='100' height='100' alt='logo' />
+					<Image src='/logo.svg' width={100} height={100} alt='logo' />
 				</Link>
 				<div className='flex gap-[5px]'>
 					<a href='https://t.me/fleffydesign' target='_blank'>

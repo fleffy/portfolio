@@ -6,7 +6,7 @@ export default function Projects({ projectList }: any) {
 			<h2 className='mb-2 text-3xl font-bold md:text-5xl lg:text-5xl'>
 				My Projects
 			</h2>
-			<div className='grid gap-5 grid-cols-1 sm:grid-cols-2 md:gap-10 my-lg:grid-cols-3 pt-10'>
+			<div className='grid gap-5 grid-cols-1 sm:grid-cols-2 md:gap-10 lg:grid-cols-2 pt-10'>
 				{projectList.map((project: any) => (
 					<ProjectCard key={project.id} project={project} />
 				))}
