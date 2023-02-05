@@ -77,16 +77,20 @@ export default async function ProjectPage({ params }: any) {
 				</div>
 			</div>
 			<div className='min-h-[300px] md:min-h-[400px] pt-5'>
-				<video
-					autoPlay
-					loop
-					muted
-					playsInline
-					className='w-full relative rounded-lg border shadow-lg border-slate-200/20'
-					width={1920}
-					height={1080}
-					src={`https://fleffy-portfolio-db.pockethost.io/api/files/_pb_users_auth_/${id}/${gif}`}
-				/>
+				<div className='border border-slate-200/20 shadow-lg rounded-lg'>
+					<div className='xl:min-w-[720px] xl:min-h-[409px]'>
+						<video
+							autoPlay
+							loop
+							muted
+							playsInline
+							className='w-full relative rounded-lg'
+							width={1920}
+							height={1080}
+							src={`https://fleffy-portfolio-db.pockethost.io/api/files/_pb_users_auth_/${id}/${gif}`}
+						/>
+					</div>
+				</div>
 			</div>
 		</section>
 	)
