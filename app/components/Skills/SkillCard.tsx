@@ -4,7 +4,7 @@ export default function SkillCard({ skill }: any) {
 	const { id, skillTitle, skillLogo, skillLink, skillAbout } = skill || {}
 	return (
 		<div className='relative flex flex-col justify-between overflow-hidden rounded-md border border-slate-200/20 bg-white/5 transition-colors hover:border-slate-300/50 duration-500'>
-			<a href='https://nextjs.org/' target='_blank'>
+			<a href={skillLink} target='_blank'>
 				<div className='flex items-center space-x-4 bg-white/10 p-2 pl-5 transition-colors hover:bg-white/20 duration-500'>
 					<Image
 						src={`https://fleffy-portfolio-db.pockethost.io/api/files/zxnbhh6eet08c3o/${id}/${skillLogo}`}

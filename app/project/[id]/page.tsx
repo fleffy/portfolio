@@ -78,7 +78,7 @@ export default async function ProjectPage({ params }: any) {
 			</div>
 			<div className='min-h-[300px] md:min-h-[400px] pt-5'>
 				<div className='border border-slate-200/20 shadow-lg rounded-lg'>
-					<div className='xl:min-w-[720px] xl:min-h-[409px]'>
+					<div className='xl:min-w-[720px] xl:min-h-[400px]'>
 						<video
 							autoPlay
 							loop
