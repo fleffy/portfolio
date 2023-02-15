@@ -10,6 +10,7 @@ async function getProject(id: string) {
 export default async function ProjectPage({ params }: any) {
 	const project = await getProject(params.id)
 	const { id, title, about, link, githubLink, gif, tags } = project || {}
+	console.log(project.gif)
 	return (
 		<section className='flex justify-between items-center flex-col md:flex-row mx-auto max-w-7xl px-4 pb-12 sm:px-6 lg:px-8 lg:gap-x-28 xl:gap-x-12 py-[100px] md:py-[140px] lg:py-[180px]'>
 			<div className='mx-auto flex max-w-[800px] flex-col gap-2 md:gap-4 xl:max-w-full min-w-[400px]'>
