@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 export default function Header() {
 	return (
-		<nav className='fixed w-full backdrop-blur-lg flex flex-col justify-between items-center py-4 z-40 text-slate-50'>
+		<nav className='fixed z-40 flex w-full flex-col items-center justify-between py-4 text-slate-50 backdrop-blur-lg'>
 			<div className='flex w-full max-w-7xl items-center justify-between px-4'>
 				<Link href='/'>
 					<Image src='/logo.svg' width={100} height={100} alt='logo' />

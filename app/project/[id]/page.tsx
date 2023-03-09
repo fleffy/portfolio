@@ -12,26 +12,26 @@ export default async function ProjectPage({ params }: any) {
 	const { id, title, about, link, githubLink, gif, tags } = project || {}
 	console.log(project.gif)
 	return (
-		<section className='flex justify-between items-center flex-col md:flex-row mx-auto max-w-7xl px-4 pb-12 sm:px-6 lg:px-8 lg:gap-x-28 xl:gap-x-12 py-[100px] md:py-[140px] lg:py-[180px]'>
-			<div className='mx-auto flex max-w-[800px] flex-col gap-2 md:gap-4 xl:max-w-full min-w-[400px]'>
+		<section className='mx-auto flex max-w-7xl flex-col items-center justify-between px-4 py-[100px] pb-12 sm:px-6 md:flex-row md:py-[140px] lg:gap-x-28 lg:px-8 lg:py-[180px] xl:gap-x-12'>
+			<div className='mx-auto flex min-w-[400px] max-w-[800px] flex-col gap-2 md:gap-4 xl:max-w-full'>
 				<h2 className='mb-2 w-full text-3xl font-bold text-slate-50 md:text-5xl lg:text-5xl'>
 					{title}
 				</h2>
 				<div>
-					<h3 className='pb-3 w-full text-3xl font-bold text-slate-50 md:text-3xl lg:text-4xl'>
+					<h3 className='w-full pb-3 text-3xl font-bold text-slate-50 md:text-3xl lg:text-4xl'>
 						About
 					</h3>
 					<p className='max-w-3xl text-base text-slate-200 md:text-xl lg:text-xl xl:text-xl'>
 						{about}
 					</p>
 				</div>
-				<div className='md:flex-col lg:block pt-5'>
+				<div className='pt-5 md:flex-col lg:block'>
 					<span>Used technologies:</span>
-					<ul className='flex flex-wrap relative lg:w-[90%] pt-3'>
+					<ul className='relative flex flex-wrap pt-3 lg:w-[90%]'>
 						{tags
 							? tags.split(' ')?.map((tag: any) => {
 									return (
-										<li className='py-1 px-3 border rounded-full mr-1 mb-2 text-sm'>
+										<li className='mr-1 mb-2 rounded-full border py-1 px-3 text-sm'>
 											{tag}
 										</li>
 									)
@@ -56,7 +56,7 @@ export default async function ProjectPage({ params }: any) {
 						href={link}
 						target='_blank'
 						rel='noopener noreferrer'
-						className='hover:shadow hover:shadow-[#300171] duration-500 rounded-full hover:bg-slate-100  text-slate-800 group inline-flex items-center px-3 lg:px-4 lg:py-1 md:px-5 py-3 text-sm md:text-base font-semibold cursor-pointer hover:no-underline transition-colors bg-white'
+						className='group inline-flex cursor-pointer items-center rounded-full  bg-white px-3 py-3 text-sm font-semibold text-slate-800 transition-colors duration-500 hover:bg-slate-100 hover:no-underline hover:shadow hover:shadow-[#300171] md:px-5 md:text-base lg:px-4 lg:py-1'
 					>
 						Visit website
 						<svg
@@ -77,9 +77,9 @@ export default async function ProjectPage({ params }: any) {
 					</a>
 				</div>
 			</div>
-			<div className='min-h-[300px] md:min-h-[400px] pt-5'>
-				<div className='border border-slate-200/20 shadow-lg rounded-lg'>
-					<div className='xl:min-w-[720px] xl:min-h-[400px]'>
+			<div className='min-h-[300px] pt-5 md:min-h-[400px]'>
+				<div className='rounded-lg border border-slate-200/20 shadow-lg'>
+					<div className='xl:min-h-[400px] xl:min-w-[720px]'>
 						{/* <video
 							src={`https://fleffy-portfolio-db.pockethost.io/api/files/_pb_users_auth_/${id}/${gif}`}
 						/> */}
@@ -88,10 +88,10 @@ export default async function ProjectPage({ params }: any) {
 							loop
 							muted
 							playsInline
-							className='w-full relative rounded-lg'
+							className='relative w-full rounded-lg'
 						>
 							<source
-								className='w-full relative rounded-lg'
+								className='relative w-full rounded-lg'
 								width={1280}
 								height={720}
 								src={`https://fleffy-portfolio-db.pockethost.io/api/files/_pb_users_auth_/${id}/${gif}`}

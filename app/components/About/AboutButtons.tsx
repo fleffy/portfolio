@@ -5,7 +5,7 @@ export default function AboutButtons() {
 				href='https://resume-fleffy.vercel.app/'
 				target='_blank'
 				rel='noopener noreferrer'
-				className='hover:shadow hover:shadow-[#300171] duration-500 rounded-full bg-white hover:bg-slate-100 text-slate-800 group inline-flex items-center px-3 lg:px-4 lg:py-3 md:px-5 py-2 text-sm md:text-base font-semibold cursor-pointer hover:no-underline transition-colors'
+				className='group inline-flex cursor-pointer items-center rounded-full bg-white px-3 py-2 text-sm font-semibold text-slate-800 transition-colors duration-500 hover:bg-slate-100 hover:no-underline hover:shadow hover:shadow-[#300171] md:px-5 md:text-base lg:px-4 lg:py-3'
 			>
 				Resume / CV
 				<svg
@@ -28,7 +28,7 @@ export default function AboutButtons() {
 				href='https://github.com/fleffy'
 				target='_blank'
 				rel='noopener noreferrer'
-				className=' rounded-full bg-white/10 hover:bg-white/20 text-white  inline-flex items-center px-3 lg:px-4 lg:py-3 md:px-5 py-2 text-sm md:text-base font-semibold cursor-pointer hover:no-underline transition-colors'
+				className=' inline-flex cursor-pointer items-center rounded-full  bg-white/10 px-3 py-2 text-sm font-semibold text-white transition-colors hover:bg-white/20 hover:no-underline md:px-5 md:text-base lg:px-4 lg:py-3'
 			>
 				GitHub
 				<svg

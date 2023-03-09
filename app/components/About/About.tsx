@@ -2,7 +2,7 @@ import AboutButtons from './AboutButtons'
 
 export default function About() {
 	return (
-		<div className='pt-[100px] sm:py-[100px] md:py-[200px] lg:[220px] xl:py-[130px] 2xl:pt-[200px]'>
+		<div className='lg:[220px] pt-[100px] sm:py-[100px] md:py-[200px] xl:py-[130px] 2xl:pt-[200px]'>
 			<div className='mx-auto max-w-[700px] xl:max-w-6xl'>
 				<h1 className='text-center text-4xl font-bold tracking-tight text-white sm:text-6xl sm:tracking-tight lg:text-[4rem] xl:text-[6rem] xl:tracking-tight 2xl:text-[6.5rem]'>
 					Yevhenii Sivukhin
