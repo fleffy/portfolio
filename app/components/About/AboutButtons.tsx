@@ -1,6 +1,6 @@
 export default function AboutButtons() {
 	return (
-		<div className='mt-4 flex w-full items-center justify-center gap-4 xl:mt-8 '>
+		<div className='mt-4 flex w-full items-center justify-center gap-4 animate-in fade-in-0 zoom-out-105 slide-in-from-top-8 duration-1500 xl:mt-8'>
 			<a
 				href='https://resume-fleffy.vercel.app/'
 				target='_blank'
