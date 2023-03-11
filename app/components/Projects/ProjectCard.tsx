@@ -2,8 +2,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 
 export default function ProjectCard({ project }: any) {
-	const { id, title, subtitle, link, githubLink, img, gif, tags } =
-		project || {}
+	const { id, title, githubLink, img, tags } = project || {}
 
 	return (
 		<div className='w-full rounded-xl border border-slate-200/20 bg-white/5 p-4 transition-colors duration-500 hover:bg-white/20'>

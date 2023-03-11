@@ -9,23 +9,22 @@ async function getProject(id: string) {
 
 export default async function ProjectPage({ params }: any) {
 	const project = await getProject(params.id)
-	const { id, title, about, link, githubLink, gif, tags } = project || {}
-	console.log(project.gif)
+	const { id, title, about, link, githubLink, img, gif, tags } = project || {}
 	return (
 		<section className='mx-auto flex max-w-7xl flex-col items-center justify-between px-4 py-[100px] pb-12 sm:px-6 md:flex-row md:py-[140px] lg:gap-x-28 lg:px-8 lg:py-[180px] xl:gap-x-12'>
 			<div className='mx-auto flex min-w-[400px] max-w-[800px] flex-col gap-2 md:gap-4 xl:max-w-full'>
-				<h2 className='mb-2 w-full text-3xl font-bold text-slate-50 md:text-5xl lg:text-5xl'>
+				<h2 className='mb-2 w-full text-3xl font-bold text-slate-50 animate-in fade-in-5 slide-in-from-top-8 duration-1500 md:text-5xl lg:text-5xl'>
 					{title}
 				</h2>
 				<div>
-					<h3 className='w-full pb-3 text-3xl font-bold text-slate-50 md:text-3xl lg:text-4xl'>
+					<h3 className='w-full pb-3 text-3xl font-bold text-slate-50 animate-in fade-in-5 slide-in-from-top-6 duration-1500 md:text-3xl lg:text-4xl'>
 						About
 					</h3>
-					<p className='max-w-3xl text-base text-slate-200 md:text-xl lg:text-xl xl:text-xl'>
+					<p className='max-w-3xl text-base text-slate-200 animate-in fade-in-5 slide-in-from-top-6 duration-2000 md:text-xl lg:text-xl xl:text-xl'>
 						{about}
 					</p>
 				</div>
-				<div className='pt-5 md:flex-col lg:block'>
+				<div className='pt-5 animate-in fade-in-5 slide-in-from-top-6 duration-2000 md:flex-col lg:block'>
 					<span>Used technologies:</span>
 					<ul className='relative flex flex-wrap pt-3 lg:w-[90%]'>
 						{tags
@@ -36,10 +35,10 @@ export default async function ProjectPage({ params }: any) {
 										</li>
 									)
 							  })
-							: console.log('something went wrong')}
+							: console.error('something went wrong')}
 					</ul>
 				</div>
-				<div className='flex gap-3'>
+				<div className='flex gap-3 animate-in fade-in-5 slide-in-from-top-8 duration-2000'>
 					<a href={githubLink} target='_blank'>
 						<svg
 							role='img'
@@ -78,11 +77,8 @@ export default async function ProjectPage({ params }: any) {
 				</div>
 			</div>
 			<div className='min-h-[300px] pt-5 md:min-h-[400px]'>
-				<div className='rounded-lg border border-slate-200/20 shadow-lg'>
+				<div className='rounded-lg border border-slate-200/20 bg-violet-800 shadow-lg animate-in fade-in-5 slide-in-from-top-10 duration-2000'>
 					<div className='xl:min-h-[400px] xl:min-w-[720px]'>
-						{/* <video
-							src={`https://fleffy-portfolio-db.pockethost.io/api/files/_pb_users_auth_/${id}/${gif}`}
-						/> */}
 						<video
 							autoPlay
 							loop
