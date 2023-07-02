@@ -6,7 +6,7 @@ export default function Skills({ skillList }: any) {
 			<h2 className='mb-2 text-3xl font-bold animate-in fade-in-0 slide-in-from-top-4 duration-1500 md:text-5xl lg:text-5xl '>
 				Skills
 			</h2>
-			<div className='grid grid-cols-1 gap-5 pt-10 animate-in fade-in-0 slide-in-from-top-6 duration-1000 sm:grid-cols-2 md:gap-10 lg:grid-cols-3'>
+			<div className='grid grid-cols-1 gap-5 py-10 animate-in fade-in-0 slide-in-from-top-6 duration-1000 sm:grid-cols-2 md:gap-10 lg:grid-cols-3'>
 				{skillList.map((skill: any) => (
 					<SkillCard key={skill.id} skill={skill} />
 				))}

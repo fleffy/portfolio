@@ -1,4 +1,5 @@
 import About from './components/About/About'
+import Experience from './components/Experience/Experience'
 import Projects from './components/Projects/Projects'
 import Skills from './components/Skills/Skills'
 
@@ -27,6 +28,7 @@ export default async function Home() {
 	return (
 		<main>
 			<About />
+			{/* <Experience /> */}
 			<Projects projectList={projects} />
 			<Skills skillList={skills} />
 		</main>
